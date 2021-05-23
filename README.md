@@ -81,10 +81,16 @@ Trying to see the git log.
 git log ---graph --oneline
 ```
 
-## Remove remote repository
+## Delete remote branch
 
 ```js
 git remote origin [remote-repo-name]
+```
+
+## Delete local branch
+
+```js
+git branch -D [branch name]
 ```
 
 ## Show remote repository in your local
