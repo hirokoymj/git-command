@@ -84,7 +84,7 @@ git log ---graph --oneline
 ## Delete remote branch
 
 ```js
-git remote origin [remote-repo-name]
+git push origin --delete <branch>
 ```
 
 ## Delete local branch
