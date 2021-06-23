@@ -92,3 +92,6 @@ git remote origin [remote-repo-name]
 ```js
 git remote show origin
 ```
+
+
+## git reset HEAD^
