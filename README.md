@@ -95,3 +95,6 @@ git remote show origin
 
 
 ## git reset HEAD^
+
+https://dzone.com/articles/git-reset-head
+
