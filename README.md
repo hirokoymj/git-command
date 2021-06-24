@@ -92,9 +92,14 @@ git remote origin [remote-repo-name]
 ```js
 git remote show origin
 ```
+ 
 
 
 ## git reset HEAD^
 
 https://dzone.com/articles/git-reset-head
+
+
+
+## git cherry-pick <commit-hash>
 
