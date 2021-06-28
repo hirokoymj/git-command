@@ -1,5 +1,25 @@
 # Git command
 
+## git pull --rebase
+
+
+
+https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
+
+>sometimes--by whatever reason--you think that it would actually be better if these two--remote and local--were one branch. Like in SVN. It is here where git pull --rebase comes into play. You no longer merge--you actually commit on top of the remote branch. That's what it actually is about.
+
+1. (develop) git pull                     // Gets the latest develop
+2. (my-branch) git checkout my-branch     // Switch a branch
+3. (my-branch) git pull origin develop  // REBASE BETWEEN develop and my-branch.
+4. (my-branch) ==== When conflicts happens, fix them manually. 
+6. (my-branch) git add .
+5. (my-branch) git rebase --continue
+7. (my-branch) git reset origin/develop // SQUASH MULTIPLE COMMITS HERE!!! 
+8. (my-branch) git add .
+9. (my-branch) git commit -m 'some commit message'
+10. (my-branch) git push my-branch --no-verify --force
+
+
 ## Daily development flow
 
 1. Check your current branch.
@@ -103,14 +123,5 @@ https://dzone.com/articles/git-reset-head
 
 ## git cherry-pick <commit-hash>
    
-1. (develop) git pull                     // Gets the latest develop
-2. (my-branch) git checkout my-branch     // Switch a branch
-3. (my-branch) git pull origin develop  // REBASE BETWEEN develop and my-branch.
-4. (my-branch) ==== When conflicts happens, fix them manually. 
-6. (my-branch) git add .
-5. (my-branch) git rebase --continue
-7. (my-branch) git reset origin/develop // SQUASH MULTIPLE COMMITS HERE!!! 
-8. (my-branch) git add .
-9. (my-branch) git commit -m 'some commit message'
-10. (my-branch) git push my-branch --no-verify --force
+
 
